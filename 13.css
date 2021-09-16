@@ -1,0 +1,43 @@
+*{
+    font-family: Calibri, Arial, sans;
+}
+
+table {
+    /* Retirar o espaçamento entre as bordas das células */
+    border-collapse:collapse;
+    /* Centralizando horizontalmente a tabela na página
+        0 -> margem superior e inferior
+        auto -> margem esquerda e direita (autocalculada) */
+        margin:auto
+}
+/* Borda para células de cabeçalho e de conteúdo */
+td, th {
+    /* Borda */
+    border: 1px solid navy;
+    /* Espaçamento interno da célula */
+    padding: 6px;
+}
+
+th {
+    /* Cor de fundo para as células de cabeçalho */
+    background-color: lightblue;
+}
+
+.dir {
+    /* Alinha o conteúdo à direita */
+    text-align: right;
+}
+
+.ctr{
+    /* Alinha o conteúdo no centro */
+    text-align: center;
+}
+
+/* Essa regra se aplica apenas aos tr que estão dentro de um foot */
+tfoot tr{
+    /* Coloca o texto em negrito */
+    font-weight: bold;
+    /* Coloca o texto em itálico */
+    font-style: italic;
+    background-color: lightgray;
+}
