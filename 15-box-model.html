@@ -5,38 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box model</title>
-    <style>
-        /* CSS reset */
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        /******************/
-        body {
-            border: 2px solid red;
-            padding: 10px;
-        }
-        #box1 {
-            border: 2px solid blue;
-            margin: 100px;
-            padding: 50px;
-        }
-        #box2 {
-            box-sizing: border-box; /* Inclui border e padding no tamanho do elemento */
-            border: 20px solid green;
-            height: 50 px;
-            width: 300px;
-            padding: 0px;
-        }
-    </style>
+    <link rel="stylesheet" href="15.css">
 </head>
 <body>
+    <h1>Box Model</h1>
     <div id="box1">
         Conteúdo
     </div>
     <hr>
+    <!-- Normalmente, a medida da borda NÃO é computada nas dimensões do elemento. Para que a borda faça parte da medida total do elemento, é necessário colocar a seguinte regra no CSS:
+        box-sizing: border-box;
+    -->
     <div id="box2">
         Caixa
     </div>
-</body>
+    <hr>
+    <div id="box3">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum quidem, vel est, tenetur commodi sit sint ipsum libero laudantium molestiae ad. Magnam quis quidem soluta, hic dicta quod alias ullam!
+    </div>
+    <hr>
+    <div id="box4">
+        Texto do círculo
+    </div>
+    <hr>
+    <img id="imagem1" src="img/metal.jpg" alt="metal">
+    <hr>
+    <div id="box5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorem distinctio ratione enim libero itaque aliquam? Possimus eius quidem voluptas, dolore mollitia sunt sed quasi, autem ad tempore odit omnis.
+    </div>
+    <hr>
+    </body>
 </html>
